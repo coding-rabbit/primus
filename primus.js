@@ -1101,7 +1101,7 @@ Primus.prototype.uri = function uri(options) {
     : url.auth;
   options.pathname = 'pathname' in options
     ? options.pathname
-    : this.pathname;
+    : url.pathname;
   options.port = 'port' in options
     ? +options.port
     : +url.port || (options.secure ? 443 : 80);
